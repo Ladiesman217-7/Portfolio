@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ee33c5959.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Mark_Jason_NoBG.png" alt="M-logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <i class="fa-solid fa-x close-icon" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>I'm <span>Mark Jason</span><br> Olympia Celina Homes</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.png" alt="another pix" class="animate-left">
+                </div>
+                <div class="about-col-2 animate-right">
+                    <h1 class="aboutme">About Me</h1>
+                    <p>Hello! I'm Mark Jason, a passionate UI/UX designer with a knack for creating intuitive and
+                        engaging digital experiences. With a background in graphic design and a love for technology, I
+                        specialize in crafting user-centered designs that not only look great but also function
+                        seamlessly. When I'm not designing, you can find me exploring new design trends or working on
+                        personal projects to hone my skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>UI?UX</span><br>Designing Web/App interfaces with a focus on user experience.
+                            </li>
+                            <li>
+                                <span>Figma</span><br>Designing app interface.
+                            </li>
+                            <li>
+                                <span>Gaming</span><br>Competetive gamer.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2024 - Current</span><br>Self-Taught and currently Studying at STI College.
+                            </li>
+                            <li>
+                                <span>Current</span><br>Studying Figma.
+                            </li>
+                            <li>
+                                <span>2010 - Current</span><br>Love Gaming.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2016 - 2018</span><br>Cabuyao National High School.
+                            </li>
+                            <li>
+                                <span>2018 - 2023</span><br>Senior High School Diploma at Jesus The Exalted Name.
+                            </li>
+                            <li>
+                                <span>2023 - 2024</span><br>Our Lady Of Fatima University.
+                            </li>
+                            <li>
+                                <span>2024 - Current</span><br>College Student at STI College.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="aboutme">My Services</h1>
+            <div class="services-list">
+                <div class="animate-up">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        Crafting visually appealing and user-friendly website designs that enhance user experience
+                        and engagement.
+                    </p>
+                    <a href="#" onclick="alert('More info coming soon!')"> Learn more</a>
+                </div>
+                <div class="animate-up">
+                    <i class="fa-brands fa-figma" style="color: #5131af;"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        Crafting visually appealing and user-friendly website designs that enhance user experience
+                        and engagement.
+                    </p>
+                    <a href="#" onclick="alert('More info coming soon!')"> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="aboutme"> My Work</h1>
+            <div class="work-list">
+                <div class="work animate-up">
+                    <img src="workone.png">
+                    <div class="layer">
+                        <h3>E-bike Connect App</h3>
+                        <p>E-Bike Connect is our thesis project, designed to let users book rides conveniently without
+                            waiting. </p>
+                        <a href="#" onclick="alert('Project details coming soon!')"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work animate-up">
+                    <img src="worktwo.png">
+                    <div class="layer">
+                        <h3>Razer Mobile App</h3>
+                        <p>Razer App Mobile is a personal prototype I developed as a work application concept for the
+                            Razer
+                            website.</p>
+                        <a href="#" onclick="alert('Project details coming soon!')"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work animate-up">
+                    <img src="workthree.png">
+                    <div class="layer">
+                        <h3>Shopee Remake App</h3>
+                        <p>The Shopee App is my redesigned version of the current Shopee application, featuring a more
+                            modern
+                            and updated interface.</p>
+                        <a href="#" onclick="alert('Project details coming soon!')"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" onclick="alert('More projects coming soon!')">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left animate-left">
+                    <h1 class="sub-contact">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@markjason.cabrales@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>09938069042</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ffhmyz/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.behance.net/markjacabrale"><i class="fa-brands fa-behance"></i></a>
+                        <a href="https://github.com/Ladiesman217-7"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="My CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right animate-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Enter Name" required>
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mark. A Game Addict with the Love of Designing</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var contents = document.getElementsByClassName("contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (content of contents) {
+                content.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+        });
+
+        // Scroll animations using Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        const animateElements = document.querySelectorAll('.animate-left, .animate-right, .animate-up');
+        animateElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
